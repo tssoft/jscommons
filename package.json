@@ -1,0 +1,28 @@
+{
+  "name": "jscommons",
+  "version": "1.0.0",
+  "description": "",
+  "main": "jscommons.js",
+  "dependencies": {
+    "gulp": "^3.9.0"
+  },
+  "devDependencies": {
+    "coffee-script": "^1.10.0",
+    "gulp": "^3.9.0",
+    "gulp-concat": "^2.6.0",
+    "require-dir": "^0.3.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tssoft/jscommons.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tssoft/jscommons/issues"
+  },
+  "homepage": "https://github.com/tssoft/jscommons#readme"
+}
