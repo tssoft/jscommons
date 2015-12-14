@@ -30,12 +30,13 @@
     global.Enum = (function () {
 
         function Enum(valuesHash) {
-            var stringValues = _.keys(valuesHash);
-            var internalEnum = Object.freeze(_.mapObject(valuesHash, function (item, key) {
+			var stringValues = _.keys(valuesHash);
+            var internalEnum = _.mapObject(valuesHash, function (item, key) {
                 var stringValue = _.find(stringValues, function (str) { return str === key; });
                 return new EnumValue(item.value, item.description, stringValue);
-            }));
+            });
             _.extend(this, internalEnum);
+            return Object.freeze(this);
         };
 
         _.extend(Enum.prototype, {
